@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    section.banner_area
+      .banner_inner.d-flex.align-items-center
+        .container
+          .banner_content.text-center
+            h1 Book A Table
+            .page_link
+              a(href='index.html') Home
+              a(href='booktable') Book A Table
+        .shape.shape1
+        .shape.shape2
+        .shape.shape3
+        .shape.shape4
+        .shape.shape5
+        .shape.shape6
+        .shape.shape7
+    // ================End Banner Area =================
+    // ================Book Table Area =================
+    section.book_table_area.section_gap
+      .container
+        .book_table_inner.row
+          .col-lg-5
+            .table_img
+              img(src='img/book-table.jpg', alt='')
+          .col-lg-7
+            .table_form
+              h3 Book a Table
+              p
+                | Who are in extremely love with eco friendly system lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              form.book_table_form.row(action='#')
+                .form-group.col-md-12
+                  input#name.form-control(type='text', name='name', placeholder='Enter your name')
+                .form-group.col-md-12
+                  input#email.form-control(type='email', name='email', placeholder='Enter email address')
+                .form-group.col-md-12
+                  input#subject.form-control(type='text', name='subject', placeholder='Phone Number')
+                .form-group.col-md-12
+                  input#subject.form-control(type='text', name='subject', placeholder='Select date & time')
+                .form-group.col-md-12
+                  .form-select
+                    select
+                      option(value='1') Select event
+                      option(value='1') Select event Dhaka
+                      option(value='1') Select event Dilli
+                      option(value='1') Select event Newyork
+                      option(value='1') Select event Islamabad
+                .form-group.col-md-12
+                  button.btn.submit_btn.form-control(type='submit', value='submit') Make Reservation
+    // ================End Book Table Area =================
+    

@@ -1,0 +1,214 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='icon', href='img/favicon.png', type='image/png')
+    title Book A Table
+    // Bootstrap CSS
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='vendors/linericon/style.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='vendors/owl-carousel/owl.carousel.min.css')
+    link(rel='stylesheet', href='vendors/lightbox/simpleLightbox.css')
+    link(rel='stylesheet', href='vendors/nice-select/css/nice-select.css')
+    link(rel='stylesheet', href='vendors/animate-css/animate.css')
+    // main css
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/responsive.css')
+  body
+    // ================Header Menu Area =================
+    header.header_area
+      .main_menu
+        nav.navbar.navbar-expand-lg.navbar-light
+          .container
+            // Brand and toggle get grouped for better mobile display
+            a.navbar-brand.logo_h(href='index.html')
+              img.logo-1(src='img/logo.png', alt='')
+              img.logo-2(src='img/logo-2.png', alt='')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            // Collect the nav links, forms, and other content for toggling
+            #navbarSupportedContent.collapse.navbar-collapse.offset
+              ul.nav.navbar-nav.menu_nav.ml-auto
+                li.nav-item
+                  a.nav-link(href='index.html') Home
+                li.nav-item
+                  a.nav-link(href='about-us.html') About
+                li.nav-item
+                  a.nav-link(href='menu.html') Menu
+                li.nav-item.active
+                  a.nav-link(href='book-table.html') book a table
+                li.nav-item.submenu.dropdown
+                  a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Pages
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='gallery.html') Gallery
+                    li.nav-item
+                      a.nav-link(href='elements.html') Elements
+                li.nav-item.submenu.dropdown
+                  a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Blog
+                  ul.dropdown-menu
+                    li.nav-item
+                      a.nav-link(href='blog.html') Blog
+                    li.nav-item
+                      a.nav-link(href='single-blog.html') Blog Details
+                li.nav-item
+                  a.nav-link(href='contact.html') Contact
+    // ================Header Menu Area =================
+    // ================ Banner Area =================
+    section.banner_area
+      .banner_inner.d-flex.align-items-center
+        .container
+          .banner_content.text-center
+            h1 Book A Table
+            .page_link
+              a(href='index.html') Home
+              a(href='book-table.html') Book A Table
+        .shape.shape1
+        .shape.shape2
+        .shape.shape3
+        .shape.shape4
+        .shape.shape5
+        .shape.shape6
+        .shape.shape7
+    // ================End Banner Area =================
+    // ================Book Table Area =================
+    section.book_table_area.section_gap
+      .container
+        .book_table_inner.row
+          .col-lg-5
+            .table_img
+              img(src='img/book-table.jpg', alt='')
+          .col-lg-7
+            .table_form
+              h3 Book a Table
+              p
+                | Who are in extremely love with eco friendly system lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              form.book_table_form.row(action='#')
+                .form-group.col-md-12
+                  input#name.form-control(type='text', name='name', placeholder='Enter your name')
+                .form-group.col-md-12
+                  input#email.form-control(type='email', name='email', placeholder='Enter email address')
+                .form-group.col-md-12
+                  input#subject.form-control(type='text', name='subject', placeholder='Phone Number')
+                .form-group.col-md-12
+                  input#subject.form-control(type='text', name='subject', placeholder='Select date & time')
+                .form-group.col-md-12
+                  .form-select
+                    select
+                      option(value='1') Select event
+                      option(value='1') Select event Dhaka
+                      option(value='1') Select event Dilli
+                      option(value='1') Select event Newyork
+                      option(value='1') Select event Islamabad
+                .form-group.col-md-12
+                  button.btn.submit_btn.form-control(type='submit', value='submit') Make Reservation
+    // ================End Book Table Area =================
+    // ================ start footer Area  =================
+    footer.footer-area.p_120
+      .container
+        .row
+          .col-lg-2.col-md-6.col-sm-6
+            .single-footer-widget.tp_widgets
+              h6.footer_title Top Products
+              ul.list
+                li
+                  a(href='#') Managed Website
+                li
+                  a(href='#') Manage Reputation
+                li
+                  a(href='#') Power Tools
+                li
+                  a(href='#') Marketing Service
+          .col-lg-2.col-md-6.col-sm-6
+            .single-footer-widget.tp_widgets
+              h6.footer_title Quick Links
+              ul.list
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Brand Assets
+                li
+                  a(href='#') Investor Relations
+                li
+                  a(href='#') Terms of Service
+          .col-lg-2.col-md-6.col-sm-6
+            .single-footer-widget.tp_widgets
+              h6.footer_title Features
+              ul.list
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Brand Assets
+                li
+                  a(href='#') Investor Relations
+                li
+                  a(href='#') Terms of Service
+          .col-lg-2.col-md-6.col-sm-6
+            .single-footer-widget.tp_widgets
+              h6.footer_title Resources
+              ul.list
+                li
+                  a(href='#') Guides
+                li
+                  a(href='#') Research
+                li
+                  a(href='#') Experts
+                li
+                  a(href='#') Agencies
+          .col-lg-4.col-md-6.col-sm-6
+            aside.f_widget.news_widget
+              .f_title
+                h3.footer_title Newsletter
+              p Stay updated with our latest trends
+              #mc_embed_signup
+                form.subscribe_form.relative(target='_blank', action='https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01', method='get')
+                  .input-group.d-flex.flex-row
+                    input(name='EMAIL', placeholder='Enter email address', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Email Address '", required='', type='email')
+                    button.btn.sub-btn
+                      span.lnr.lnr-arrow-right
+                  .mt-10.info
+        .row.footer-bottom.d-flex.justify-content-between.align-items-center
+          p.col-lg-8.col-md-8.footer-text.m-0
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+            | Copyright ©
+            script.
+              document.write(new Date().getFullYear());
+            |  All rights reserved | This template is made with 
+            i.fa.fa-heart-o(aria-hidden='true')
+            |  by 
+            a(href='https://colorlib.com', target='_blank') Colorlib
+            // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+          .col-lg-4.col-md-4.footer-social
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-dribbble
+            a(href='#')
+              i.fa.fa-behance
+    // ================ End footer Area  =================
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='js/jquery-3.2.1.min.js')
+    script(src='js/popper.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/stellar.js')
+    script(src='vendors/lightbox/simpleLightbox.min.js')
+    script(src='vendors/nice-select/js/jquery.nice-select.min.js')
+    script(src='vendors/isotope/imagesloaded.pkgd.min.js')
+    script(src='vendors/isotope/isotope-min.js')
+    script(src='vendors/owl-carousel/owl.carousel.min.js')
+    script(src='js/jquery.ajaxchimp.min.js')
+    script(src='vendors/counter-up/jquery.waypoints.min.js')
+    script(src='vendors/counter-up/jquery.counterup.js')
+    script(src='js/mail-script.js')
+    script(src='vendors/popup/jquery.magnific-popup.min.js')
+    script(src='vendors/scroll/jquery.mCustomScrollbar.js')
+    script(src='vendors/swiper/js/swiper.min.js')
+    script(src='js/theme.js')

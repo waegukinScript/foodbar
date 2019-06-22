@@ -1,0 +1,59 @@
+extends layout
+
+block content
+
+  // ================ Start banner Area =================
+  section.banner-area.relative
+    .container
+      .row.height.align-items-center.justify-content-center
+        .banner-content.col-lg-6
+          h1 Event Database
+          hr
+          .breadcrmb
+            p
+              a(href='index.html') Databases
+              span.lnr.lnr-arrow-right
+              a(href='about.html') From  ../models
+              a(href="/contactDatabase")
+                li Contact
+              a(href="/eventDatabase")
+                li Event
+              a(href="/userDatabase")
+                li User
+
+  // ============ content =====================
+  section.gallery-area.section-gap.mt-172
+    .container
+      .row.align-items-center
+        .col-lg-6.col-md-5.col-sm-6
+          .single-gallery.mt--350
+              form#myFormEvent.booking-form(action=`/event/update/${event.id}` method='POST')
+                  .row
+                      .col-lg-12.d-flex.flex-column.mb-20
+                          input.form-control(name='name', value=`${event.name}` placeholder='Name',  onfocus="this.placeholder = ''", onblur="this.placeholder = 'Name'", required='', type='text')
+                      .col-lg-12.d-flex.flex-column.mb-20
+                          input.form-control(name='emailAddress', placeholder='Email Address',value=`${event.emailAddress}` onfocus="this.placeholder = ''", onblur="this.placeholder = 'Email Address'", required='', type='email')
+                      .col-lg-12.d-flex.flex-column.mb-20
+                          input.form-control(name='phoneNumber', placeholder='Phone Number',value=`${event.phoneNumber}` onfocus="this.placeholder = ''", onblur="this.placeholder = 'Phone Number'", required='', type='text')
+                      .input-group.col-lg-6.mb-20
+                          input#date.form-control.datepicker(name='reservationDate', value=`${event.reservationDate}` placeholder='Reservation Date', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Reservation Date'", required='', type='text')
+                          span.input-group-append
+                              button.btn.btn-outline-secondary.border-left-0.border-0(type='button')
+                                  i.fa.fa-calendar.reservation-calendar
+                      .col-lg-6.d-flex.flex-column.mb-20
+                          input.form-control(name='reservationTime', placeholder='Reservation Time',value=`${event.reservationTime}` onfocus="this.placeholder = ''", onblur="this.placeholder = 'Reservation Time'", required='', type='text')
+                      .col-lg-6.d-flex.flex-column.mb-20
+                         select.form-control(name='selectEvent')
+                            option(value='0' selected= `${event.selectEvent}` == 0) Select event
+                            option(value='1' selected= `${event.selectEvent}` == 1) Select event Dhaka
+                            option(value='2' selected= `${event.selectEvent}` == 2) Select event Dilli
+                            option(value='3' selected= `${event.selectEvent}` == 3) Select event Newyork
+                            option(value='4' selected= `${event.selectEvent}` == 4) Select event Islamabad
+                      .col-lg-12.d-flex.justify-content-end
+                          br
+                          button.btn.btn-md.btn-success(type='submit')
+                              i.fas.fa-pencil-square-o.fa-sm
+                              | Update
+
+                      .alert-msg
+
